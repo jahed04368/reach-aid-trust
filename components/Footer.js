@@ -1,12 +1,13 @@
 import React from 'react';
 import { BsFacebook, BsTwitter, BsInstagram } from 'react-icons/bs';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <footer className="text-center text-black bg-teal-400">
       <div className="container px-6 pt-6 mx-auto">
         <div className="flex justify-center mb-6">
-          <a
+          <Link
             href="#!"
             type="button"
             className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
@@ -19,9 +20,9 @@ const Footer = () => {
               data-icon="facebook-f"
               className=" mx-auto"
             />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#!"
             type="button"
             className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
@@ -34,9 +35,9 @@ const Footer = () => {
               data-icon="twitter"
               className=" mx-auto"
             />
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="#!"
             type="button"
             className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
@@ -49,7 +50,7 @@ const Footer = () => {
               data-icon="instagram"
               className=" mx-auto"
             />
-          </a>
+          </Link>
         </div>
 
         <div>

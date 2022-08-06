@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -31,7 +32,11 @@ const About = () => {
           </ul>
           <div className="flex justify-center">
             <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
-              <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <Link
+                href="#!"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
                 <Image
                   className="rounded"
                   src=""
@@ -39,10 +44,14 @@ const About = () => {
                   width={640}
                   height={360}
                 />
-              </a>
+              </Link>
             </div>
             <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
-              <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <Link
+                href="#!"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
                 <Image
                   className="rounded"
                   src=""
@@ -50,10 +59,14 @@ const About = () => {
                   width={640}
                   height={360}
                 />
-              </a>
+              </Link>
             </div>
             <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
-              <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+              <Link
+                href="#!"
+                data-mdb-ripple="true"
+                data-mdb-ripple-color="light"
+              >
                 <Image
                   className="rounded"
                   src=""
@@ -61,7 +74,7 @@ const About = () => {
                   width={640}
                   height={360}
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

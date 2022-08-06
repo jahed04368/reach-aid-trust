@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import { FcDonate } from 'react-icons/fc';
 import axios from 'axios';
 import { getFeaturedProjects } from '../helpers/api-util';
+import Link from 'next/link';
 
 const Homepage = ({ projects }) => {
   return (
@@ -19,13 +20,12 @@ const Homepage = ({ projects }) => {
         the leap into electronic typesetting, remaining essentially unchanged.
       </h1>
       <div className="flex justify-center">
-        <a
-          className="rounded-full p-2 w-4/12 md:w-3/12 xl:w-2/12 border-4 text-center	text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black"
-          href="https://www.gofundme.com/f/buqjw6-bangladesh-flood"
-        >
-          <FcDonate className="text-2xl md:text-4xl inline pr-1" />
-          Donate
-        </a>
+        <Link href="https://www.gofundme.com/f/buqjw6-bangladesh-flood">
+          <div className="flex justify-center rounded-full p-2 w-4/12 md:w-3/12 xl:w-2/12 border-4 text-center	text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black">
+            <FcDonate className="text-2xl md:text-4xl inline pr-1" />
+            <h1>Donate</h1>
+          </div>
+        </Link>
       </div>
       <div className="flex justify-center my-10">
         {/* change xl:grid-cols-2 to xl:grid-cols-3 if theres 3 projects */}
