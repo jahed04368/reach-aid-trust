@@ -20,8 +20,8 @@ const Homepage = ({ projects }) => {
         the leap into electronic typesetting, remaining essentially unchanged.
       </h1>
       <div className="flex justify-center">
-        <Link href="https://www.gofundme.com/f/buqjw6-bangladesh-flood">
-          <div className="flex justify-center rounded-full p-2 w-4/12 md:w-3/12 xl:w-2/12 border-4 text-center	text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black">
+        <Link href="https://www.gofundme.com/f/emergency-bangladesh-floods-appeal-2022">
+          <div className="flex justify-center rounded-full p-2 w-5/12 md:w-3/12 xl:w-2/12 border-4 text-center text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black">
             <FcDonate className="text-2xl md:text-4xl inline pr-1" />
             <h1>Donate</h1>
           </div>
@@ -29,7 +29,7 @@ const Homepage = ({ projects }) => {
       </div>
       <div className="flex justify-center my-10">
         {/* change xl:grid-cols-2 to xl:grid-cols-3 if theres 3 projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 col-span-1 mt-5 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 col-span-1 mt-5">
           {projects.map((project) => {
             return (
               <div key={project.title}>
@@ -46,7 +46,7 @@ const Homepage = ({ projects }) => {
         </div>
       </div>
 
-      <div className="bg-slate-700	">
+      <div className="bg-slate-700">
         <div className="text-center text-white p-6">
           <p className="text-4xl p-4">Make a difference</p>
           <p className="text-xl">
