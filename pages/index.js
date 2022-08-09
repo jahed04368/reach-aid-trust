@@ -38,7 +38,7 @@ const Homepage = ({ projects }) => {
                 <HomepageCard
                   title={project.title}
                   date={project.date}
-                  image={project.image}
+                  image={project.displayImage}
                   description={project.description}
                   id={project.id}
                 />

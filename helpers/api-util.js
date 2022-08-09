@@ -1,6 +1,6 @@
 // Get data through API
 export async function getAllProjects() {
-  const response = await fetch('https://jsonkeeper.com/b/4SXT');
+  const response = await fetch('https://jsonkeeper.com/b/VC8Y');
   const { projects } = await response.json();
 
   const events = [];

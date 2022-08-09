@@ -36,7 +36,7 @@ const AllProjects = ({ projects }) => {
                     desc={project.description}
                     projectName={project.title}
                     urllink={'https://todo-jahed04368.netlify.app/'}
-                    img={project.image}
+                    img={project.displayImage}
                   />
                 );
               }

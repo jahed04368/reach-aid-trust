@@ -20,6 +20,7 @@ const Contact = () => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault();
+
     const enteredFirstName = firstNameInputRef.current.value;
     const enteredLastName = lastNameInputRef.current.value;
     const enteredEmail = emailInputRef.current.value;
