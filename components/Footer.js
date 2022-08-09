@@ -99,19 +99,16 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+            distinctio earum repellat quaerat voluptatibus placea.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2"></div>
       </div>
-
-      <div className="text-center pt-4">
+      <div className="text-center">
         <p>© 2022 Copyright - Reach Aid Trust - Charity number: 1127768</p>
       </div>
     </footer>
