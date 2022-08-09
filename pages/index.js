@@ -21,7 +21,7 @@ const Homepage = ({ projects }) => {
       </h1>
       <div className="flex justify-center">
         <Link href="https://www.gofundme.com/f/emergency-bangladesh-floods-appeal-2022">
-          <div className="flex justify-center rounded-full p-2 w-5/12 md:w-3/12 xl:w-2/12 border-4 text-center text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black">
+          <div className="flex justify-center rounded-full p-2 w-6/12 md:w-3/12 xl:w-2/12 border-4 text-center text-md md:text-xl	border-orange-400 animate-pulse hover:border-black hover:bg-white hover:text-black">
             <FcDonate className="text-2xl md:text-4xl inline pr-1" />
             <h1>Donate</h1>
           </div>
