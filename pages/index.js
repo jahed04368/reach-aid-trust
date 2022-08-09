@@ -11,7 +11,7 @@ const Homepage = ({ projects }) => {
   return (
     <div className="text-black">
       <Navbar />
-      <h1 className="m-8 md:mt-16 px-3 md:px-3 xl:px-8 text-center italic text-xl">
+      <h1 className="my-8 md:mt-16 px-3 md:px-3 xl:px-8 text-center italic text-xl">
         At <span className="font-semibold text-sky-600">Reach Aid Trust</span>
         is simply dummy text of the printing and typesetting industry. Lorem
         Ipsum has been the industries standard dummy text ever since the 1500s,

@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className={`my-16 mx-1 text-xl text-center md:text-start`}>
+      <div className={`my-16 mx-6 text-lg md:text-xl`}>
         <p className={`${truncateText ? 'line-clamp-6 lg:line-clamp-0' : ''}`}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the standard dummy text ever since the
@@ -24,7 +24,7 @@ const About = () => {
           versions of Lorem Ipsum.
         </p>
         <button
-          className="italic text-green-600 text-base lg:hidden"
+          className="italic text-green-600 lg:hidden"
           onClick={() => setTruncateText(!truncateText)}
         >
           {truncateText ? 'show more' : 'show less'}
@@ -87,7 +87,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <p className="text-center">
+        <p className="text-lg md:text-xl">
           We hope that you will support our projects by donating as much as you
           can and consider setting up a monthly standing order or direct debit
           by going to our donation page.
