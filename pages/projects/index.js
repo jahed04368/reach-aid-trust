@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar';
 import Image from 'next/image';
 import { getAllProjects } from '../../helpers/api-util';
 import Link from 'next/link';
+import ProjectCard from '../../components/ProjectCard';
 
 const AllProjects = ({ projects }) => {
   // const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
@@ -17,33 +18,32 @@ const AllProjects = ({ projects }) => {
   return (
     <div>
       <Navbar />
-      {projects.map((project) => {
-        return (
-          <div className="justify-center flex" key={project.id}>
-            <Link href={`/projects/${project.id}`}>
-              <div className="flex items-center bg-white rounded-lg border shadow-md flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <Image
-                  width={640}
-                  height={500}
-                  className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                  alt=""
-                  src={`/${project.image}`}
-                />
-                <div className="flex flex-col justify-between p-4 leading-normal w-96">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Noteworthy technology acquisitions 2021
-                  </h5>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </div>
-        );
-      })}
+      <div className="text-black">
+        <div className="container flex flex-wrap items-center mx-auto px-2 py-10 lg:pt-20">
+          <h1 className="text-3xl pb-2 pl-3">
+            {
+              'Please donate on all projects or specific project of your choice.'
+            }
+          </h1>
 
+          {projects.map((project) => {
+            {
+              {
+                return (
+                  <ProjectCard
+                    key={project.id}
+                    id={project.id}
+                    desc={project.description}
+                    projectName={project.title}
+                    urllink={'https://todo-jahed04368.netlify.app/'}
+                    img={project.image}
+                  />
+                );
+              }
+            }
+          })}
+        </div>
+      </div>
       <Footer />
     </div>
   );

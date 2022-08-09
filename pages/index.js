@@ -3,7 +3,6 @@ import HomepageCard from '../components/HomepageCard';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { FcDonate } from 'react-icons/fc';
-import axios from 'axios';
 import { getFeaturedProjects } from '../helpers/api-util';
 import Link from 'next/link';
 
@@ -12,7 +11,10 @@ const Homepage = ({ projects }) => {
     <div className="text-black">
       <Navbar />
       <h1 className="my-8 md:mt-16 px-3 md:px-3 xl:px-8 text-center italic text-xl">
-        At <span className="font-semibold text-sky-600">Reach Aid Trust</span>
+        At
+        <span className="font-semibold text-sky-600 px-2 underline">
+          Reach Aid Trust
+        </span>
         is simply dummy text of the printing and typesetting industry. Lorem
         Ipsum has been the industries standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a
