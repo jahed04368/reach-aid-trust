@@ -13,13 +13,11 @@ const AllProjects = ({ projects }) => {
   //   year: 'numeric',
   // });
   // const formattedAddress = location.replace(', ', '\n');
-  const exploreLink = `/events/${projects.id}`;
 
   return (
     <div>
       <Navbar />
       {projects.map((project) => {
-        console.log(project);
         return (
           <div className="justify-center flex" key={project.id}>
             <Link href={`/projects/${project.id}`}>
@@ -29,6 +27,7 @@ const AllProjects = ({ projects }) => {
                   height={600}
                   className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                   alt=""
+                  src={`/${project.image}`}
                 />
                 <div className="flex flex-col justify-between p-4 leading-normal w-96">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

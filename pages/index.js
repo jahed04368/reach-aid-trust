@@ -38,7 +38,7 @@ const Homepage = ({ projects }) => {
                   date={project.date}
                   image={project.image}
                   description={project.description}
-                  link={project.id}
+                  id={project.id}
                 />
               </div>
             );

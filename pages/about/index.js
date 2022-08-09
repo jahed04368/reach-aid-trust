@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
+import TestImage from '../../public/images/test-image.png';
 
 const About = () => {
   return (
@@ -39,7 +40,7 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src=""
+                  src={TestImage}
                   alt=""
                   width={640}
                   height={360}
@@ -54,7 +55,7 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src=""
+                  src={TestImage}
                   alt=""
                   width={640}
                   height={360}
@@ -69,7 +70,7 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src=""
+                  src={TestImage}
                   alt=""
                   width={640}
                   height={360}
