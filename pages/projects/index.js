@@ -21,10 +21,10 @@ const AllProjects = ({ projects }) => {
         return (
           <div className="justify-center flex" key={project.id}>
             <Link href={`/projects/${project.id}`}>
-              <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <div className="flex items-center bg-white rounded-lg border shadow-md flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <Image
                   width={640}
-                  height={600}
+                  height={500}
                   className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                   alt=""
                   src={`/${project.image}`}

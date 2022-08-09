@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 const Homepage = ({ projects }) => {
   return (
-    <div className="bg-gray-500	text-white">
+    <div className="text-black">
       <Navbar />
       <h1 className="m-8 md:mt-16 px-3 md:px-3 xl:px-8 text-center italic text-xl">
         At <span className="font-semibold text-sky-600">Reach Aid Trust</span>
