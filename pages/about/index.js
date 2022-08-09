@@ -40,7 +40,7 @@ const About = () => {
             <li>- Bangaldesh food packages</li>
           </ul>
           <div className="flex justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
-            <div className="col-span-1 md:col-span-1 lg:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
+            <div className="col-span-1 md:col-span-1 lg:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 my-2">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
@@ -55,7 +55,7 @@ const About = () => {
                 />
               </Link>
             </div>
-            <div className="col-span-1 md:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
+            <div className="col-span-1 md:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 my-2">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
@@ -70,7 +70,7 @@ const About = () => {
                 />
               </Link>
             </div>
-            <div className="col-span-1 md:col-span-0 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
+            <div className="col-span-1 md:col-span-0 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 my-2">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
