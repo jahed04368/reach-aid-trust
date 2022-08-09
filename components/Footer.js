@@ -5,8 +5,8 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="text-center text-black bg-teal-400">
-      <div className="container px-6 pt-6 mx-auto">
-        <div className="flex justify-center mb-6">
+      <div className="px- pt-6 my-10">
+        <div className="flex flex-row ">
           <Link
             href="#!"
             type="button"
@@ -53,7 +53,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div>
+        <div className="pt-6">
           <form action="">
             <div className="grid md:grid-cols-3 gird-cols-1 gap-4 flex justify-center items-center">
               <div className="md:ml-auto md:mb-6">

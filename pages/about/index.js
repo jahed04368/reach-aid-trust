@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
@@ -6,11 +6,13 @@ import Link from 'next/link';
 import TestImage from '../../public/images/test-image.png';
 
 const About = () => {
+  const [truncateText, setTruncateText] = useState(true);
+
   return (
     <div className="">
       <Navbar />
-      <div className="m-16 text-xl text-center md:text-start ">
-        <p>
+      <div className={`m-16 text-xl text-center md:text-start`}>
+        <p className={`${truncateText ? 'line-clamp-4 lg:line-clamp-0' : ''}`}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
@@ -21,6 +23,12 @@ const About = () => {
           with desktop publishing software like Aldus PageMaker including
           versions of Lorem Ipsum.
         </p>
+        <button
+          className="italic text-green-600 text-base lg:hidden"
+          onClick={() => setTruncateText(!truncateText)}
+        >
+          {truncateText ? 'show more' : 'show less'}
+        </button>
         <div className="my-6">
           <h2>
             Since our establishment in 2017 we have carried out the following
@@ -31,8 +39,8 @@ const About = () => {
             <li>- Covid 19 pandemic food packages in London</li>
             <li>- Bangaldesh food packages</li>
           </ul>
-          <div className="flex justify-center">
-            <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
+          <div className="flex justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4">
+            <div className="col-span-1 md:col-span-1 lg:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
@@ -42,12 +50,12 @@ const About = () => {
                   className="rounded"
                   src={TestImage}
                   alt=""
-                  width={640}
-                  height={360}
+                  width={3840}
+                  height={2160}
                 />
               </Link>
             </div>
-            <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
+            <div className="col-span-1 md:col-span-1 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
@@ -57,12 +65,12 @@ const About = () => {
                   className="rounded"
                   src={TestImage}
                   alt=""
-                  width={640}
-                  height={360}
+                  width={3840}
+                  height={2160}
                 />
               </Link>
             </div>
-            <div className="rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2">
+            <div className="col-span-1 md:col-span-0 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 py-4">
               <Link
                 href="#!"
                 data-mdb-ripple="true"
@@ -72,8 +80,8 @@ const About = () => {
                   className="rounded"
                   src={TestImage}
                   alt=""
-                  width={640}
-                  height={360}
+                  width={3840}
+                  height={2160}
                 />
               </Link>
             </div>
