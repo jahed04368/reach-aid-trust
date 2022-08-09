@@ -9,10 +9,10 @@ const About = () => {
   const [truncateText, setTruncateText] = useState(true);
 
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <div className={`m-16 text-xl text-center md:text-start`}>
-        <p className={`${truncateText ? 'line-clamp-4 lg:line-clamp-0' : ''}`}>
+      <div className={`my-16 mx-1 text-xl text-center md:text-start`}>
+        <p className={`${truncateText ? 'line-clamp-6 lg:line-clamp-0' : ''}`}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
