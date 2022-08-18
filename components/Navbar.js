@@ -9,10 +9,10 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-50">
-      <nav className="bg-blue-500	border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 ">
+      <nav className="bg-blue-500 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex flex-wrap justify-between items-center mx-auto m-2 md:m-5">
           <Link href="/" className="flex items-center">
-            <div className="flex flex-inline">
+            <div className="flex flex-inline cursor-pointer">
               <div className="mr-2">
                 <Image
                   src={Logo}
@@ -22,7 +22,7 @@ const Navbar = () => {
                 />
               </div>
 
-              <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="cursor-pointer	self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Reach Aid <span className="text-red-900">Trust</span>
               </span>
             </div>
