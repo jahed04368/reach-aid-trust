@@ -2,24 +2,27 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import Logo from '../public/logo/TEST-LOGO.png';
 
 const Navbar = () => {
   const [closeNav, setCloseNav] = useState(false);
 
   return (
     <div className="sticky top-0 z-50">
-      <nav className="bg-teal-400 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 ">
+      <nav className="bg-blue-500	border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 ">
         <div className="container flex flex-wrap justify-between items-center mx-auto m-2 md:m-5">
           <Link href="/" className="flex items-center">
-            <div>
-              <Image
-                src={'/'}
-                className="mr-3 h-6 sm:h-9"
-                alt="Flowbite Logo"
-                width={70}
-                height={40}
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <div className="flex flex-inline">
+              <div className="mr-2">
+                <Image
+                  src={Logo}
+                  alt="Reach Aid Trust"
+                  width={40}
+                  height={35}
+                />
+              </div>
+
+              <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Reach Aid <span className="text-red-900">Trust</span>
               </span>
             </div>
@@ -48,7 +51,7 @@ const Navbar = () => {
               <li>
                 <Link href="/">
                   <a
-                    className="block py-2 pr-4 pl-3 text-teal-900 font-semibold rounded md:bg-transparent md:p-0 dark:text-white"
+                    className="block py-2 pr-4 pl-3 text-black font-semibold rounded md:bg-transparent md:p-0 dark:text-white"
                     aria-current="page"
                   >
                     Home
