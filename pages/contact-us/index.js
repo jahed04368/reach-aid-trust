@@ -58,9 +58,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="text-black">
+    <div className="">
       <Navbar />
-      <div className="container flex flex-wrap justify-center items-center mx-auto px-2 py-10 lg:pt-20">
+      <div className="container flex flex-wrap justify-center items-center mx-auto px-3 py-10 lg:pt-20">
         {!submitted && (
           <form
             className="w-full max-w-lg"

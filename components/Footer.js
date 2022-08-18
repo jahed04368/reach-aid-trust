@@ -5,12 +5,12 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="text-center text-black bg-blue-500">
-      <div className="px- pt-6 my-10">
-        <div className="flex flex-row ">
+      <div className="pt-6 my-10">
+        <div className="flex flex-row">
           <Link
             href="#!"
             type="button"
-            className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
+            className="leading-normal hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
           >
             <BsFacebook
               size={30}
@@ -18,14 +18,14 @@ const Footer = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="facebook-f"
-              className=" mx-auto"
+              className="mx-auto"
             />
           </Link>
 
           <Link
             href="#!"
             type="button"
-            className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
+            className="leading-normal hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
           >
             <BsTwitter
               size={30}
@@ -33,14 +33,14 @@ const Footer = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="twitter"
-              className=" mx-auto"
+              className="mx-auto"
             />
           </Link>
 
           <Link
             href="#!"
             type="button"
-            className="leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
+            className="leading-normal hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out px-2"
           >
             <BsInstagram
               size={30}
@@ -48,7 +48,7 @@ const Footer = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="instagram"
-              className=" mx-auto"
+              className="mx-auto"
             />
           </Link>
         </div>
