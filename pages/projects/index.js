@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { getAllProjects } from '../../helpers/api-util';
 import Link from 'next/link';
 import ProjectCard from '../../components/ProjectCard';
+import Head from 'next/head';
 
 const AllProjects = ({ projects }) => {
   // const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
@@ -17,6 +18,10 @@ const AllProjects = ({ projects }) => {
 
   return (
     <div>
+      <Head>
+        <title>Reach Aid Trust</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className="text-black">
         <div className="container flex flex-wrap items-center mx-auto px-2 py-10 lg:pt-20">

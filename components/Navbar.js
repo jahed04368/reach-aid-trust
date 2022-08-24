@@ -27,7 +27,6 @@ const Navbar = () => {
               </span>
             </div>
           </Link>
-
           <button
             data-collapse-toggle="mobile-menu"
             type="button"
