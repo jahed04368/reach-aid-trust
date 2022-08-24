@@ -2,6 +2,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import { getFeaturedProjects, getProjectById } from '../../helpers/api-util';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const ProjectDetailPage = (props) => {
   const { title, date, description, id, image, isFeatured, location, images } =
@@ -23,6 +24,10 @@ const ProjectDetailPage = (props) => {
 
   return (
     <div>
+      <Head>
+        <title>Reach Aid Trust</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div>
         <Navbar />
       </div>

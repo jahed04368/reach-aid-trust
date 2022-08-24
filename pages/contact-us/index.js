@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Contact = () => {
   const form = useRef({});
@@ -59,6 +60,10 @@ const Contact = () => {
 
   return (
     <div className="">
+      <Head>
+        <title>Reach Aid Trust</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className="container flex flex-wrap justify-center items-center mx-auto px-3 py-10 lg:pt-20">
         {!submitted && (

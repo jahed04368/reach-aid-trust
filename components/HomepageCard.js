@@ -23,8 +23,8 @@ const Card = (props) => {
           className="rounded-t-lg w-full h-80 "
           src={`/${image}`}
           alt=""
-          width={640}
-          height={360}
+          width={400}
+          height={250}
         />
       </Link>
       {/* </div> */}

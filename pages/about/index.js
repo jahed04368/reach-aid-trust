@@ -3,13 +3,20 @@ import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Image from 'next/image';
 import Link from 'next/link';
-import TestImage from '../../public/images/test-image.png';
+import ImageOne from '../../public/images/about/about-us-1.jpg';
+import ImageTwo from '../../public/images/about/about-us-2.jpg';
+import ImageThree from '../../public/images/about/about-us-3.jpg';
+import Head from 'next/head';
 
 const About = () => {
   const [truncateText, setTruncateText] = useState(true);
 
   return (
     <div>
+      <Head>
+        <title>Reach Aid Trust</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <div className={`my-16 mx-6 text-lg md:text-xl`}>
         <p className={`${truncateText ? 'line-clamp-6 lg:line-clamp-0' : ''}`}>
@@ -48,10 +55,10 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src={TestImage}
+                  src={ImageOne}
                   alt=""
-                  width={3840}
-                  height={2160}
+                  width={400}
+                  height={250}
                 />
               </Link>
             </div>
@@ -63,10 +70,10 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src={TestImage}
+                  src={ImageTwo}
                   alt=""
-                  width={3840}
-                  height={2160}
+                  width={400}
+                  height={250}
                 />
               </Link>
             </div>
@@ -78,10 +85,10 @@ const About = () => {
               >
                 <Image
                   className="rounded"
-                  src={TestImage}
+                  src={ImageThree}
                   alt=""
-                  width={3840}
-                  height={2160}
+                  width={400}
+                  height={250}
                 />
               </Link>
             </div>

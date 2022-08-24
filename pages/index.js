@@ -5,10 +5,15 @@ import Navbar from '../components/Navbar';
 import { FcDonate } from 'react-icons/fc';
 import { getFeaturedProjects } from '../helpers/api-util';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Homepage = ({ projects }) => {
   return (
     <div className="text-black">
+      <Head>
+        <title>Reach Aid Trust</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <h1 className="my-8 md:mt-16 px-3 md:px-3 xl:px-8 text-center italic text-xl">
         At
