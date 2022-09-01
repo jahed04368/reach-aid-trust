@@ -39,32 +39,22 @@ const ProjectDetailPage = (props) => {
               {title}
             </h2>
             <p className="mb-4">{description}</p>
-
-            <div className="flex">
-              <p className="font-semibold pr-2">{'Location -'}</p>
-              <p>{location}</p>
+            <div className="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700 ">
+              <p className="pr- font-medium text-gray-900 dark:text-white w-3/12 sm:w-2/12">
+                {'Location'}
+              </p>
+              <p className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400 w-9/12">
+                {location}
+              </p>
             </div>
-
-            <div className="flex">
-              <p className="font-semibold pr-2">{'Date -'}</p>
-              <time>{humanReadableDate}</time>
+            <div className="flex items-center divide-x-2 divide-gray-300 dark:divide-gray-700">
+              <p className="pr- font-medium text-gray-900 dark:text-white w-3/12 sm:w-2/12">
+                {'Date'}
+              </p>
+              <p className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400 w-9/12">
+                {humanReadableDate}
+              </p>
             </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 mt-8">
-            <Image
-              className="w-full rounded-lg"
-              src={`/${images[0]}`}
-              alt="office content 1"
-              width={640}
-              height={300}
-            />
-            <Image
-              className="mt-4 w-full lg:mt-10 rounded-lg"
-              src={`/${images[1]}`}
-              alt="office content 2"
-              width={640}
-              height={300}
-            />
           </div>
         </div>
       </section>
@@ -74,14 +64,17 @@ const ProjectDetailPage = (props) => {
           <div className="flex flex-wrap -m-1 md:-m-2">
             {images.map((image) => {
               return (
-                <div className="flex flex-wrap w-1/3" key={image}>
-                  <div className="w-full p-1 md:p-2">
+                <div
+                  className="flex justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4"
+                  key={image}
+                >
+                  <div className="col-span-1 sm:col-span-3 md:col-span-3 rounded-lg shadow-lg bg-white max-w-sm mx-4 hover:bg-sky-100 hover:border-2 my-2">
                     <Image
-                      alt="gallery"
-                      className="block object-cover object-center w-full h-full rounded-lg"
+                      className="rounded"
                       src={`/${image}`}
-                      width={640}
-                      height={300}
+                      alt=""
+                      width={400}
+                      height={250}
                     />
                   </div>
                 </div>

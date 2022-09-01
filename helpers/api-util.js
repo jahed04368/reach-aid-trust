@@ -26,6 +26,7 @@ export async function getAllProjects() {
 //   }
 //   return events;
 // }
+
 export async function getFeaturedProjects() {
   const allProjects = await getAllProjects();
   return allProjects.filter((event) => event.isFeatured);
