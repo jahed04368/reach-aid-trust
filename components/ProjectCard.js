@@ -15,7 +15,6 @@ const ProjectCard = ({ img, desc, projectName, urllink, id }) => {
                   href={`/projects/${id}`}
                   target={'_blank'}
                   rel="noreferrer"
-                  className=""
                 >
                   <a className="text-blue-300 text- italic">
                     {`Go to ${projectName}`}
