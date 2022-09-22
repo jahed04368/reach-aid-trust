@@ -94,7 +94,6 @@ export default ProjectDetailPage;
 
 export async function getStaticProps(context) {
   const projectId = context.params.projectId;
-
   const project = await getProjectById(projectId);
 
   return {

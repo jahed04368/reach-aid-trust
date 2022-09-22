@@ -1,42 +1,45 @@
 {
-  "homepage": [
-    {
-      "title": "Bangaldesh Flood",
-      "image": "images/homepage/card-image.jpg",
-      "description": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-    },
-    {
-      "title": "test Flood",
-      "image": "images/homepage/card-image.jpg",
-      "description": "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-    }
-  ],
   "projects": [
     {
       "id": "e1",
-      "title": "Programming for everyone",
+      "title": "2021 Zakah",
       "description": "Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.",
       "location": "Somestreet 25, 12345 San Somewhereo",
       "date": "2021-05-12",
-      "image": "images/coding-event.jpg",
+      "displayImage": "images/projects/project-1.jpg",
+      "images": [
+        "images/projects/project-1.jpg",
+        "images/projects/project-2.jpg",
+        "images/projects/project-3.jpg"
+      ],
       "isFeatured": false
     },
     {
       "id": "e2",
-      "title": "Networking for introverts",
+      "title": "2022 Eid-ul-Fitr",
       "description": "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
       "location": "New Wall Street 5, 98765 New Work",
       "date": "2021-05-30",
-      "image": "images/introvert-event.jpg",
+      "displayImage": "images/projects/project-2.jpg",
+      "images": [
+        "images/projects/project-1.jpg",
+        "images/projects/project-2.jpg",
+        "images/projects/project-3.jpg"
+      ],
       "isFeatured": true
     },
     {
       "id": "e3",
-      "title": "Networking for extroverts",
+      "title": "2019 Covid",
       "description": "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
       "location": "My Street 12, 10115 Broke City",
       "date": "2022-04-10",
-      "image": "images/extrovert-event.jpg",
+      "displayImage": "images/projects/project-3.jpg",
+      "images": [
+        "images/projects/project-1.jpg",
+        "images/projects/project-2.jpg",
+        "images/projects/project-3.jpg"
+      ],
       "isFeatured": true
     }
   ]
